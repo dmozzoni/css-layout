@@ -1,25 +1,103 @@
 # CSS Layout
 
-
 ### Learning Objectives
-- linking files (paths)
-- normalize
-- relative, fixed, absolute
-- floats, clearfix
-- block, inline, inline-block
-- flexbox
-- grids
+- Link to files using their paths
+- Position elements using relative, fixed, & absolute positioning
+- Describe floats, & clearfix
+- Understand the difference between block, inline, & inline-block elements
+- Use flexbox to create a layout
+- Practice using a custom grid system
+- Describe the difference between normalize and reset and know what they do
 
 # You do: Layout Games (30)
 
 Take your time reading [learn layout](http://learnlayout.com/) as you go through it please try out what you're learning in the layout-games exercise.
 
-[layout-games](https://github.com/ga-wdi-exercises/layout-games)
+Please clone and complete the [layout-games](https://github.com/ga-wdi-exercises/layout-games) exercise
 
 ### Questions (10)
 
+# Layout Comparison (10)
+
+Adapted from [Karen Menezes excellent blog post](http://blog.karenmenezes.com/2014/apr/13/floats-inline-block-or-display-table-or-flexbox/)
+
+#### Floats
+**Advantages**
+- Most popular way to lay things out; most grid frameworks follow this.
+- Everyone's aware of float bugs due to the popularity of floating, and there are well documented ways to overcome them.
+
+**Disadvantages**
+- Need to be cleared. Can be quite painful if you're changing widths at 2-3 media query breakpoints, because the floats will need to be cleared that many times.
+- No vertical centering
+- No equal heights
+- No source order independence
+
+**Use for:**
+- Large layout blocks that don't need equal heights and vertical centering
+
+#### Inline Block
+**Advantages**
+- Vertical centering is most useful for some layouts
+- Don't need to be cleared. Useful for complex layouts when breakpoints need to be changed at more than a couple of screen widths. You can see this demo to understand how advantageous inline-block can be, for this use case.
+
+**Disadvantages**
+- Suffers from inherent whitespace, which will disturb your grid calculations. You can't make a two column grid with the left being 30% and the right being 70%, with display: inline-block, because the whitespace will break the grid and push the second column to the next line. There are ways around this. The easiest is if you're using lists with the HTML5 doctype, because you don't need to add closing list tags and this removes the whitespace bug. See this article for more.
+- No equal heights
+- No source order independence
+
+**Use for**
+- When you require vertical centering, but not equal heights with CSS.
+- When you want to avoid clearing your floats at different breakpoints.
+- When you can get around the whitespace issue, without driving the rest of your dev team crazy.
+- When you can get around the whitespace issue, whilst ensuring that your templating language does not try to add closing li items. That's not cool, bro.
+- When you're using list items for layout and don't need a closing li tag, inline-block truly shines.
+
+#### Flexbox
+**Advantages**
+- Source order independence. Could be of tremendous value for responsive layouts and eliminates the need for JS for this.
+- Vertical centering
+- Equal heights
+- Flex boxes move along interchangebly the X and Y axis, with such ease, that you can really change things around with a couple of properties.
+- Boxes grow and shrink, can be columns or rows, fit to the available space however you wish to declare this.
+- There are multiple ways to do the same thing with flexbox.
+
+**Disadvantages**
+- Syntax is initially unintuitive. You spend the first few hours looking at demos saying WOW, followed by WTF.
+- Lots of vendor prefixes, with a different syntax for older IE and Webkit. Use something like Autoprefixr to work around this. Or write some mixins. Or do something..
+- Doesn't work on IE9. If you don't have to support IE9, you're fine.
+- Reports of the older syntax impacting performance. I wouldn't care too much about this honestly, especially if you were using JS to do the things Flexbox now can...
+
+**Use for**
+- You can already start using it for vertical centering, if you don't need things to look the same on IE9.
+- If you don't need IE9 support, it's perfect for source order independent layouts, equal heights.
+- I would highly recommend using it for personal projects.
+- App layouts where things need to stretch and squish. Flexbox really shines here.
+
+# You Do: Hyrule Potion Shop (20 / 70)
+
+Please count off again, and complete this exercise:
+
+Google is your friend, please look up things you don't know!
+These might also help:
+
+- [css-tricks: complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [scotch.io: visual guide to flexbox](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)
+- [fluid layouts with flexbox](http://webagility.com/posts/fluid-layouts-done-right-with-flexbox)
+- [flexbox frog game](http://flexboxfroggy.com/)
+
+Please clone and complete the [hyrule potion shop](https://github.com/ga-wdi-exercises/hyrule_potion_shop) exercise
+
+### Questions (10 / 80)
+
 # Grids
-## Opening Exercise (10)
+
+For complicated layouts it is often advantageous to create a set of classes that control layout properties that can be applied to elements to position them. This enables positioning properties to be reused instead of having to create css rules ad-hoc for every element that needs to be moved. 
+
+Many `css frameworks` come with a grid system. Almost all of these systems use some combination of columns with percentage widths that are floating or inline-block.
+
+[here's an article on building one with flexbox](https://philipwalton.github.io/solved-by-flexbox/demos/grids/)
+
+## Opening Exercise (10 / 90)
 
 Whiteboard a wireframe for [Craigslist](http://washingtondc.craigslist.org/).
 * Focus on the main components of the page, sections that would be defined by the rows and columns in our grid.
@@ -27,7 +105,7 @@ Whiteboard a wireframe for [Craigslist](http://washingtondc.craigslist.org/).
 * Keep an eye out for width, height, proportion, number of components.
 * [Sample wireframe.](http://www.comentum.com/images/wireframes-sample/ecommerce/home.png)
 
-## Why use a CSS grid? (5)
+## Why use a CSS grid? (5 / 100)
 
 ### Structure
 * Grids are a simple way to apply layout to a webpage. A better layout improves the user experience.
@@ -40,7 +118,7 @@ Whiteboard a wireframe for [Craigslist](http://washingtondc.craigslist.org/).
 
 _Even if you don't use a grid system, these concepts will translate across other layout problems._
 
-### Basic components of a grid (5)
+### Basic components of a grid (5 / 105)
 
 #### Rows
 * The highest-level component of a grid.
@@ -52,13 +130,13 @@ _Even if you don't use a grid system, these concepts will translate across other
 #### Gutters
 * Provides spacing between our columns. Optional, but useful.
 
-## You do: Craigslist-grid  (10)
+## You do: Craigslist-grid  (10 / 115)
 
 You don't need a fancy-schmancy front-end framework to reap the benefits of a CSS grid. Let's explore one built from scratch.
 
-[craigslist grid exercise](https://github.com/ga-wdi-exercises/craigslist_grid)
+Please clone and complete the [craigslist grid exercise](https://github.com/ga-wdi-exercises/craigslist_grid)
 
-### Clearfix
+### Clearfix (10 / 125)
 
 Our grid relies on being able to float columns. These columns will most likely contain content of various sizes.
 * We need to make sure each piece of content is constrained to its respective row and column containers
@@ -83,31 +161,10 @@ Here is a more robust version of clearfix and the one you should use most of the
 }
 ```
 
-# You Do: Hyrule Potion Shop (30)
+[css-tricks all about floats](https://css-tricks.com/all-about-floats/)
 
-Please count off again, and complete this exercise:
 
-Google is your friend, please look up things you don't know!
-These might also help:
-
-- [css-tricks: complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-- [scotch.io: visual guide to flexbox](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)
-
-The exercise: [hyrule potion shop](https://github.com/ga-wdi-exercises/hyrule_potion_shop)
-
-### Questions (10)
-
-# Outtro (5)
-
-There are over 500 CSS properties. It's impossible to memorize them. The key is to just get an idea of what you can accomplish with CSS, and then know what to Google.
-
-### Tools that can help
-
-**[The CSS Validator](http://jigsaw.w3.org/css-validator/#validate_by_input)** is a tool into which you can copy and paste your CSS, and it'll tell you precisely what's wrong with it. We'll be expecting you to validate your CSS during this course.
-
-**The Chrome element inspector** lets you look at a specific element on a page, see exactly which CSS rules are being applied to it, and turn those rules on and off and modify them. It doesn't change your file; refresh the page, and the changes are gone.
-
-### Q. What is Bootstrap, and how do you feel about it?
+### Q. What is Bootstrap, and how do you feel about it? (5 / 130)
 
 > Bootstrap is a CSS *library*: it's a stylesheet you can link to in your HTML, and it provides you with a bunch of classes that you can apply that make things look really nice.
 
@@ -115,7 +172,7 @@ There are over 500 CSS properties. It's impossible to memorize them. The key is 
 
 There are [many other](http://designsparkle.com/bootstrap-alternatives/) 'design frameworks' that are similar to bootstrap
 
-## Browser Styles (10)
+## Browser Styles (10 / 140)
 
 Browsers have default styles for different elements. For example `<body>` tags often have a default margin of ~8px. A `div` element in Chrome will has a height of 18px, in Firefox it's 19.2px. While this difference may be small it does vary. We often start our CSS by overriding, or reseting, some of these default properties:
 
@@ -144,6 +201,16 @@ Another approach instead of unstyling all of the default properties is to try to
 ```
 
 - _**Normalize provides a cross-browser starting point with some properties**_
+
+# Outtro (5 / 145)
+
+There are over 500 CSS properties. It's impossible to memorize them. The key is to just get an idea of what you can accomplish with CSS, and then know what to Google.
+
+### Tools that can help
+
+**[The CSS Validator](http://jigsaw.w3.org/css-validator/#validate_by_input)** is a tool into which you can copy and paste your CSS, and it'll tell you precisely what's wrong with it. We'll be expecting you to validate your CSS during this course.
+
+**The Chrome element inspector** lets you look at a specific element on a page, see exactly which CSS rules are being applied to it, and turn those rules on and off and modify them. It doesn't change your file; refresh the page, and the changes are gone.
 
 ## Quiz Questions
 
