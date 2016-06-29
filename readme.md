@@ -9,6 +9,10 @@
 - Practice using a custom grid system
 - Describe the difference between normalize and reset and know what they do
 
+### Framing 
+
+Layout with CSS are hard
+
 # You do: Layout Games (30)
 
 Take your time reading [learn layout](http://learnlayout.com/) as you go through it please try out what you're learning in the layout-games exercise.
@@ -35,6 +39,8 @@ Adapted from [Karen Menezes excellent blog post](http://blog.karenmenezes.com/20
 **Use for:**
 - Large layout blocks that don't need equal heights and vertical centering
 
+---
+
 #### Inline Block
 **Advantages**
 - Vertical centering is most useful for some layouts
@@ -51,6 +57,8 @@ Adapted from [Karen Menezes excellent blog post](http://blog.karenmenezes.com/20
 - When you can get around the whitespace issue, without driving the rest of your dev team crazy.
 - When you can get around the whitespace issue, whilst ensuring that your templating language does not try to add closing li items. That's not cool, bro.
 - When you're using list items for layout and don't need a closing li tag, inline-block truly shines.
+
+---
 
 #### Flexbox
 **Advantages**
@@ -72,6 +80,8 @@ Adapted from [Karen Menezes excellent blog post](http://blog.karenmenezes.com/20
 - If you don't need IE9 support, it's perfect for source order independent layouts, equal heights.
 - I would highly recommend using it for personal projects.
 - App layouts where things need to stretch and squish. Flexbox really shines here.
+
+## Break (10)
 
 # You Do: Hyrule Potion Shop (20 / 70)
 
@@ -129,6 +139,8 @@ _Even if you don't use a grid system, these concepts will translate across other
 
 #### Gutters
 * Provides spacing between our columns. Optional, but useful.
+
+## Break (5-10)
 
 ## You do: Craigslist-grid  (10 / 115)
 
