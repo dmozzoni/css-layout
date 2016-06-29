@@ -1,3 +1,7 @@
+# CSS Layout
+
+
+### Learning Objectives
 - linking files (paths)
 - normalize
 - relative, fixed, absolute
@@ -6,9 +10,7 @@
 - flexbox
 - grids
 
-
-
-## You do: Layout Games (30)
+# You do: Layout Games (30)
 
 Take your time reading [learn layout](http://learnlayout.com/) as you go through it please try out what you're learning in the layout-games exercise.
 
@@ -16,10 +18,72 @@ Take your time reading [learn layout](http://learnlayout.com/) as you go through
 
 ### Questions (10)
 
-## Clearfix
+# Grids
+## Opening Exercise (10)
 
+Whiteboard a wireframe for [Craigslist](http://washingtondc.craigslist.org/).
+* Focus on the main components of the page, sections that would be defined by the rows and columns in our grid.
+* Don't worry about site content (e.g., text, images).
+* Keep an eye out for width, height, proportion, number of components.
+* [Sample wireframe.](http://www.comentum.com/images/wireframes-sample/ecommerce/home.png)
 
-## You Do: Hyrule Potion Shop (30)
+## Why use a CSS grid? (5)
+
+### Structure
+* Grids are a simple way to apply layout to a webpage. A better layout improves the user experience.
+* Grids help avoid stressful CSS debugging by starting out on the right foot.
+
+### Reusability
+* Grids make the layout process easier because of resusable, semantically-named "utility classes" (i.e., a library of CSS class selectors).
+* Grids aren't limited to a particular project. We can apply them to pretty much everything we do.
+* Grids are highly customizable. You can really make them your own.
+
+_Even if you don't use a grid system, these concepts will translate across other layout problems._
+
+### Basic components of a grid (5)
+
+#### Rows
+* The highest-level component of a grid.
+* Comprised of columns.
+
+#### Columns
+* Contain and separate site content.
+
+#### Gutters
+* Provides spacing between our columns. Optional, but useful.
+
+## You do: Craigslist-grid  (10)
+
+You don't need a fancy-schmancy front-end framework to reap the benefits of a CSS grid. Let's explore one built from scratch.
+
+[craigslist grid exercise](https://github.com/ga-wdi-exercises/craigslist_grid)
+
+### Clearfix
+
+Our grid relies on being able to float columns. These columns will most likely contain content of various sizes.
+* We need to make sure each piece of content is constrained to its respective row and column containers
+
+Let's [illustrate this problem](http://codepen.io/adambray/pen/GoWobo?editors=110).
+* As this code stands, we have a row that contains two squares. But these squares are overflowing out of the row, which appears as a straight black line.
+
+This is where the clearfix technique comes in. Fortunately, it's easy to implement (as long as you don't care about how your site looks in Internet Explorer).
+
+```css
+.row {
+  overflow: auto;
+}
+```
+
+Here is a more robust version of clearfix and the one you should use most of the time:
+```css
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+```
+
+# You Do: Hyrule Potion Shop (30)
 
 Please count off again, and complete this exercise:
 
@@ -33,7 +97,7 @@ The exercise: [hyrule potion shop](https://github.com/ga-wdi-exercises/hyrule_po
 
 ### Questions (10)
 
-## Outtro (5)
+# Outtro (5)
 
 There are over 500 CSS properties. It's impossible to memorize them. The key is to just get an idea of what you can accomplish with CSS, and then know what to Google.
 
