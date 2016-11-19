@@ -26,6 +26,8 @@ competencies: Front-end frameworks
 
 Layout with CSS are hard
 
+There are over 500 CSS properties. It's impossible to memorize them. The key is to just get an idea of what you can accomplish with CSS, and then know what to Google.
+
 ### Setup (5)
 
  - open terminal and `cd` into your wdi folder
@@ -35,6 +37,8 @@ Layout with CSS are hard
  - include `<link rel="stylesheet" href="style.css" media="screen" title="no title">` in head of index.html
 
 ### Questions (10)
+
+
 
 # Layout Comparison (10)
 
@@ -231,7 +235,7 @@ Another approach instead of unstyling all of the default properties is to try to
 
 # Outtro (5 / 145)
 
-There are over 500 CSS properties. It's impossible to memorize them. The key is to just get an idea of what you can accomplish with CSS, and then know what to Google.
+Remember that Google is your friend. As junior devs, it is impossible to remember everything, especially in a fast changing environment liek coding. There will always be many ways to do the same thing. Find what works for you and your style. All you need to know is what techniques are out there to know what to look for.
 
 ### Tools that can help
 
