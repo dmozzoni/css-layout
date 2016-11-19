@@ -26,11 +26,13 @@ competencies: Front-end frameworks
 
 Layout with CSS are hard
 
-# You do: Layout Games (30)
+### Setup (5)
 
-Take your time reading [learn layout](http://learnlayout.com/) as you go through it please try out what you're learning in the layout-games exercise.
-
-Please clone and complete the [layout-games](https://github.com/ga-wdi-exercises/layout-games) exercise
+ - open terminal and `cd` into your wdi folder
+ - `mkdir css-layout` and `cd css-layout`
+ - `touch index.html style.css`
+ - `atom .`
+ - include `<link rel="stylesheet" href="style.css" media="screen" title="no title">` in head of index.html
 
 ### Questions (10)
 
