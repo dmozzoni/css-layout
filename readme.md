@@ -114,7 +114,6 @@ Adapted from [Karen Menezes excellent blog post](http://blog.karenmenezes.com/20
      <div></div>
      <div></div>
     ```
-  
   2. Go into the css file and access the `<div>` element and giv them each a height, widths, and a background-color
   ```
   div {
@@ -123,11 +122,8 @@ Adapted from [Karen Menezes excellent blog post](http://blog.karenmenezes.com/20
     background-color: green;
   }
   ```
-  
   3. Now lets see what happens when we add float to our div.
-  
   4. Now try playing with the display.
-  
   5. Now lets use display flex  
 
 
