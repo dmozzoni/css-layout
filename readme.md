@@ -107,14 +107,15 @@ Adapted from [Karen Menezes excellent blog post](http://blog.karenmenezes.com/20
  - open index.html and create the html boiler plate
  - include the link the css in the html head
 
- 1. Lets create some `<div>`'s 
+ - Lets create some `<div>`'s 
     ```
      <div></div>
      <div></div>
      <div></div>
      <div></div>
     ```
-  2. Go into the css file and access the `<div>` element and giv them each a height, widths, and a background-color
+  
+  - Go into the css file and access the `<div>` element and giv them each a height, widths, and a background-color
   ```
   div {
     height: 200px;
@@ -122,9 +123,10 @@ Adapted from [Karen Menezes excellent blog post](http://blog.karenmenezes.com/20
     background-color: green;
   }
   ```
-  3. Now lets see what happens when we add float to our div.
-  4. Now try playing with the display.
-  5. Now lets use display flex  
+  
+  - Now lets see what happens when we add float to our div.
+  - Now try playing with the display.
+  - Now lets use display flex  
 
 
 ## Break (5)
