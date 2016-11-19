@@ -1,8 +1,10 @@
 ---
-title: CRUD with Angular and Express
+title: CSS-Layout
 type: Lesson
-duration: "4:00"
+duration: "2:00"
 Created:
+    Campus: GA DC
+    Creator: Jesse Shawl
     Campus: GA Boston
     Contributors: Lauren Fazah, Rachel S., Brian Berzellini, Matt Brendzel, Json Wharff
 Edited:
