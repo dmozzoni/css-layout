@@ -24,9 +24,11 @@ competencies: Front-end frameworks
 
 ### Framing 
 
-Layout with CSS are hard
+Layout with CSS is hard.
 
 There are over 500 CSS properties. It's impossible to memorize them. The key is to just get an idea of what you can accomplish with CSS, and then know what to Google.
+
+There are also many frameworks and libraries that can aid your layout development, each with their own pros and cons. The goal as a developer is to become familiar with each to use them as you need.
 
 ### Setup (5)
 
@@ -37,8 +39,6 @@ There are over 500 CSS properties. It's impossible to memorize them. The key is 
  - include `<link rel="stylesheet" href="style.css" media="screen" title="no title">` in head of index.html
 
 ### Questions (10)
-
-
 
 # Layout Comparison (10)
 
@@ -57,6 +57,10 @@ Adapted from [Karen Menezes excellent blog post](http://blog.karenmenezes.com/20
 
 **Use for:**
 - Large layout blocks that don't need equal heights and vertical centering
+
+#### Example (10)
+
+Lets create some `<div>`'s and make them all different height, widths, and colors
 
 ---
 
