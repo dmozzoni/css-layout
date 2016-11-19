@@ -31,13 +31,9 @@ There are over 500 CSS properties. It's impossible to memorize them. The key is 
 
 There are also many frameworks and libraries that can aid your layout development, each with their own pros and cons. The goal as a developer is to become familiar with each to use them as you need.
 
-### Setup (5)
+# You do: Layout Reading (30)
 
- - open terminal and `cd` into your wdi folder
- - `mkdir css-layout` and `cd css-layout`
- - `touch index.html style.css`
- - `atom .`
- - include `<link rel="stylesheet" href="style.css" media="screen" title="no title">` in head of index.html
+Take your time reading [learn layout](http://learnlayout.com/)
 
 ### Questions (10)
 
@@ -58,10 +54,6 @@ Adapted from [Karen Menezes excellent blog post](http://blog.karenmenezes.com/20
 
 **Use for:**
 - Large layout blocks that don't need equal heights and vertical centering
-
-#### Example (10)
-
-Lets create some `<div>`'s and make them all different height, widths, and colors
 
 ---
 
@@ -105,7 +97,41 @@ Lets create some `<div>`'s and make them all different height, widths, and color
 - I would highly recommend using it for personal projects.
 - App layouts where things need to stretch and squish. Flexbox really shines here.
 
-## Break (10)
+#### Example / Play with code (20)
+
+ ##### Setup
+ - go into your wdi folder
+ - `mkdir css-layout` and `cd` into it
+ - create 2 files `touch index.html style.css`
+ - open folder in atom with `atom .`
+ - open index.html and create the html boiler plate
+ - include the link the css in the html head
+
+ 1. Lets create some `<div>`'s 
+    ```
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+    ```
+  
+  2. Go into the css file and access the `<div>` element and giv them each a height, widths, and a background-color
+  ```
+  div {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+  }
+  ```
+  
+  3. Now lets see what happens when we add float to our div.
+  
+  4. Now try playing with the display.
+  
+  5. Now lets use display flex  
+
+
+## Break (5)
 
 # You Do: Hyrule Potion Shop (20 / 70)
 
