@@ -3,9 +3,8 @@ title: CSS-Layout
 type: Lesson
 duration: "2:00"
 Created:
-    Campus: GA DC
+    Campus: GA DC/GA Boston
     Creator: Jesse Shawl
-    Campus: GA Boston
     Contributors: Lauren Fazah, Rachel S., Brian Berzellini, Matt Brendzel, Json Wharff
 Edited:
     name: Eric Stermer
