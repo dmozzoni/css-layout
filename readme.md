@@ -1,3 +1,16 @@
+---
+title: CRUD with Angular and Express
+type: Lesson
+duration: "4:00"
+Created:
+    Campus: GA Boston
+    Contributors: Lauren Fazah, Rachel S., Brian Berzellini, Matt Brendzel, Json Wharff
+Edited:
+    name: Eric Stermer
+    city: PVD
+competencies: Front-end frameworks
+---
+
 # CSS Layout
 
 ### Learning Objectives
