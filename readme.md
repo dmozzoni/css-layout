@@ -179,7 +179,7 @@ Adapted from [Karen Menezes excellent blog post](http://blog.karenmenezes.com/20
 
 Lets practice layout with flex-boxes. This is a just another way to make layout a little easier.
 
-It is built into
+It is built into CSS3.
 
 A great resource to learning flex-boxes is this [flexbox frog game](http://flexboxfroggy.com/).
 
