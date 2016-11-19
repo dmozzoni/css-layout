@@ -31,6 +31,39 @@ There are over 500 CSS properties. It's impossible to memorize them. The key is 
 
 There are also many frameworks and libraries that can aid your layout development, each with their own pros and cons. The goal as a developer is to become familiar with each to use them as you need.
 
+# Box Model (10)
+
+(open a website and the chrome dev tools)
+
+In addition to setting an element's `height` and `width`, elements have three
+other properties that explicitly control spacing:
+
+1.  'Border' sets a perimeter around an element. In addition to specifying a color
+and a particular type of border, you can also specify a thickness.
+2.  'Margin' specifies spacing between the outside of an element's border and any
+adjacent elements.
+3.  'Padding' specifies spacing between the inside of an element's border and the
+contents of that element (which includes `height` and `width`!)
+
+Together, these attributes form _the box model_, a way of describing the space
+taken up by an element.
+
+_Note: an element's size is determined by its content's height and width.Border, margin, and padding add to that size._
+_To calculate those into the element's size, the element's CSS [`box-sizing`](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing) property should be changed from the default `content-box` to `border-box.`_
+![Box Model](https://mdn.mozillademos.org/files/8685/boxmodel-3.png)
+
+Every one of these attributes, including `height` and `width`, can be specified
+in the following terms:
+
+-   `px` : fixed number of pixels
+-   `%`  : size is relative to element that contains it ("parent"). As a value of
+`height`, `%` is relative to the parent's `height`, but for every other
+dimension, `%` is relative to the parent's `width` value.
+-   `em` : ties dimensions to *font size* - one `em` is the width of the letter 'm'.
+For all dimensions except `font-size`, `em` will refer to the font size of the
+element; as a value for `font-size`, `em` refers to the font size of the
+*parent*
+
 # You do: Layout Reading (30)
 
 Take your time reading [learn layout](http://learnlayout.com/)
