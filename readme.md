@@ -99,7 +99,7 @@ Adapted from [Karen Menezes excellent blog post](http://blog.karenmenezes.com/20
 
 #### Example / Play with code (20)
 
- ##### Setup
+##### Setup
  - go into your wdi folder
  - `mkdir css-layout` and `cd` into it
  - create 2 files `touch index.html style.css`
