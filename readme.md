@@ -164,6 +164,12 @@ Adapted from [Karen Menezes excellent blog post](http://blog.karenmenezes.com/20
 
 ## Break (5)
 
+# You Do: Flex Froggy (20)
+
+A great resource to learning flex-boxes is this [flexbox frog game](http://flexboxfroggy.com/).
+
+It is a simple 20 something challenge game that touches on each flex method with great visuals.
+
 # You Do: Hyrule Potion Shop (20 / 70)
 
 Please count off again, and complete this exercise:
@@ -174,11 +180,10 @@ These might also help:
 - [css-tricks: complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [scotch.io: visual guide to flexbox](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)
 - [fluid layouts with flexbox](http://webagility.com/posts/fluid-layouts-done-right-with-flexbox)
-- [flexbox frog game](http://flexboxfroggy.com/)
 
 Please clone and complete the [hyrule potion shop](https://github.com/ga-wdi-exercises/hyrule_potion_shop) exercise
 
-### Questions (10 / 80)
+### Other layout methods to touch on
 
 # Grids
 
@@ -188,13 +193,7 @@ Many `css frameworks` come with a grid system. Almost all of these systems use s
 
 [here's an article on building one with flexbox](https://philipwalton.github.io/solved-by-flexbox/demos/grids/)
 
-## Opening Exercise (10 / 90)
-
-Whiteboard a wireframe for [Craigslist](http://washingtondc.craigslist.org/).
-* Focus on the main components of the page, sections that would be defined by the rows and columns in our grid.
-* Don't worry about site content (e.g., text, images).
-* Keep an eye out for width, height, proportion, number of components.
-* [Sample wireframe.](http://www.comentum.com/images/wireframes-sample/ecommerce/home.png)
+[here's a link to many examples using grids](http://gridbyexample.com/examples/)
 
 ## Why use a CSS grid? (5 / 100)
 
@@ -222,12 +221,6 @@ _Even if you don't use a grid system, these concepts will translate across other
 * Provides spacing between our columns. Optional, but useful.
 
 ## Break (5-10)
-
-## You do: Craigslist-grid  (10 / 115)
-
-You don't need a fancy-schmancy front-end framework to reap the benefits of a CSS grid. Let's explore one built from scratch.
-
-Please clone and complete the [craigslist grid exercise](https://github.com/ga-wdi-exercises/craigslist_grid)
 
 ### Clearfix (10 / 125)
 
