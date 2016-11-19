@@ -68,6 +68,17 @@ element; as a value for `font-size`, `em` refers to the font size of the
 
 Take your time reading [learn layout](http://learnlayout.com/)
 
+### Things to focus on:
+ - elements with diferent preset display styles
+ - margin: 0 auto
+ - max/min-width/height
+ - position
+ - float + clear + hack
+ - media queries
+ - CSS Framworks llinks at the end
+ 
+Notice there was information about flex-boxes, we will cover that later
+
 ### Questions (10)
 
 # Layout Comparison (10)
@@ -165,6 +176,10 @@ Adapted from [Karen Menezes excellent blog post](http://blog.karenmenezes.com/20
 ## Break (5)
 
 # You Do: Flex Froggy (20)
+
+Lets practice layout with flex-boxes. This is a just another way to make layout a little easier.
+
+It is built into
 
 A great resource to learning flex-boxes is this [flexbox frog game](http://flexboxfroggy.com/).
 
